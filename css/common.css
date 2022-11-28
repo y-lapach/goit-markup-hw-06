@@ -40,6 +40,9 @@ button {
     border-width: 0px;
     cursor: pointer;
 }
+input {
+    cursor: pointer;
+}
 
 body {
     background-color: var(--primary-white);
@@ -303,12 +306,16 @@ address {
     height: 50px;
     padding-left: 16px;
     margin-right: 12px;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     background-color: transparent;
-    outline: 1px solid rgba(255, 255, 255, 0.3);
+    outline: 1px solid transparent;
     transition: outline var(--transition-time);
+}
+.signup-email:hover,
+.signup-email:focus {
+    outline: 1px solid var(--accent-color);
 }
 .signup-email::placeholder {
     font-weight: 400;
@@ -316,13 +323,6 @@ address {
     line-height: 1.3;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-}
-.signup-email:focus::-webkit-input-placeholder {
-    opacity: 0;
-}
-.signup-email:hover,
-.signup-email:focus {
-    outline: 1px solid var(--accent-color);
 }
 .signup-button {
     display: flex;

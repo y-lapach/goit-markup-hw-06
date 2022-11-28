@@ -427,6 +427,84 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="request-form-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="request-form">
+          <div class="modal-field">
+            <label for="request-name" class="request-label">Ім'я</label>
+            <div class="request-form-group">
+              <input
+                type="text"
+                name="request-name"
+                id="request-name"
+                required
+                class="request-input"
+              />
+              <svg class="request-form-icon" width="12" height="12">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="request-tel" class="request-label">Телефон</label>
+            <div class="request-form-group">
+              <input
+                type="tel"
+                name="request-tel"
+                id="request-tel"
+                required
+                class="request-input"
+              />
+              <svg class="request-form-icon" width="13" height="13">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="request-mail" class="request-label">Пошта</label>
+            <div class="request-form-group">
+              <input
+                type="email"
+                name="request-mail"
+                id="request-mail"
+                required
+                class="request-input"
+              />
+              <svg class="request-form-icon" width="15" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field-comment">
+            <label for="request-comment" class="request-label">Коментар</label>
+            <textarea
+              name="request-comment"
+              id="request-comment"
+              placeholder="Введіть текст"
+              class="request-comment"
+            ></textarea>
+          </div>
+          <div class="modal-field-policy">
+            <input
+              type="checkbox"
+              name="policy"
+              value="policy"
+              id="policy"
+              class="policy-checkbox visually-hidden"
+            />
+            <label for="policy" class="request-policy">
+              <span>
+                <svg class="request-icon-check" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю&nbsp;<a href="#" class="policy"
+                >Умови договору</a
+              ></label
+            >
+          </div>
+
+          <button type="submit" class="request-send-btn">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
