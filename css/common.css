@@ -313,7 +313,6 @@ address {
     outline: 1px solid transparent;
     transition: outline var(--transition-time);
 }
-.signup-email:hover,
 .signup-email:focus {
     outline: 1px solid var(--accent-color);
 }
